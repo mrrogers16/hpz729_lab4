@@ -23,9 +23,6 @@ public class MainController implements View.OnClickListener
     public void onClick(View view)
     {
         int id = view.getId();
-        if(id == R.id.starship1)
-        {
-            String registry =
-        }
+
     }
 }

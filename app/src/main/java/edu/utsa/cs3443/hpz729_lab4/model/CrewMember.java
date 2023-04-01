@@ -18,7 +18,6 @@ public class CrewMember {
     private String rank;//Crew members rank.
     private String species;//Crew members species.
     private String assignment;//Crew members assignment.
-    private String registry;//Crew members assigned ship registry.
 
     /**
      * Crew Member Constructor with all values
