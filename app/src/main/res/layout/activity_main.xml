@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="235dp"
-        android:layout_height="248dp"
+        android:layout_width="321dp"
+        android:layout_height="305dp"
         app:srcCompat="@drawable/main_logo"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="68dp" />
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/starship1"
