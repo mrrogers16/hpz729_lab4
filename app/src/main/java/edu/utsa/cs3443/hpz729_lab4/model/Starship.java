@@ -26,6 +26,11 @@ public class Starship {
     private String shipClass;//The class of the Starship
     private ArrayList<CrewMember> crewList = new ArrayList<CrewMember>();//An ArrayList of CrewMember objects named crewList.
 
+
+
+    public Starship(){
+
+    }
     /**
      * Starship Constructor
      *
@@ -70,6 +75,7 @@ public class Starship {
             }
         }
     }
+
 
     /**
      * getNumberOfPersonel returns an int representing the number of personel in the crewList ArrayList
