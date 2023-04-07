@@ -31,6 +31,9 @@ public class Fleet {
     private String name; //The name of the fleet.
     private ArrayList<Starship> starShipList = new ArrayList<>(); //ArrayList of Starship objects
 
+
+
+    public Fleet(){}
     /**
      * Fleet Constructor
      * @param name - String
@@ -42,8 +45,6 @@ public class Fleet {
 
     public void loadFleetCSV(Context context, String filepath) throws IOException
     {
-
-
         AssetManager assetManager = context.getAssets();
         InputStream inputStream = assetManager.open(filepath);
         BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
@@ -63,7 +64,18 @@ public class Fleet {
         }
     }
 
-
+    public Starship searchFleetByRegistry(String registry)
+    {
+        for(Starship i : starShipList)
+        {
+            String reg = i.getRegistry();
+            if(reg.equals(registry))
+            {
+                return i;
+            }
+        }
+        return null;
+    }
 
 
     /**

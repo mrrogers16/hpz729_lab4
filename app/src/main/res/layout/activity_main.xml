@@ -19,7 +19,7 @@
         android:layout_width="174dp"
         android:layout_height="60dp"
         android:layout_marginTop="335dp"
-        android:text="Starship1"
+        android:text="USS Voyager\nNCC-74656"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="118dp" />
 
@@ -28,7 +28,7 @@
         android:layout_width="174dp"
         android:layout_height="60dp"
         android:layout_marginTop="395dp"
-        android:text="Starship2"
+        android:text="USS Venture\nNCC-71854"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="118dp" />
 
@@ -37,7 +37,7 @@
         android:layout_width="174dp"
         android:layout_height="60dp"
         android:layout_marginTop="455dp"
-        android:text="Starship3"
+        android:text="USS Gibraltar\nNCC-75689"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="118dp" />
 
