@@ -12,18 +12,12 @@ import edu.utsa.cs3443.hpz729_lab4.StarshipActivity;
 
 public class MainController implements View.OnClickListener
 {
-    MainActivity mainActivity;
-    private Activity activity;
-
-    public MainController(Activity activity)
-    {
-        this.activity = activity;
-    }
-
     @Override
     public void onClick(View view)
     {
-        int id = view.getId();
+        Intent intent = new Intent(view.getContext(), StarshipActivity.class);
+        intent.putExtra("intVariableName", view.getId());
+        view.getContext().startActivity(intent);
 
     }
 }
