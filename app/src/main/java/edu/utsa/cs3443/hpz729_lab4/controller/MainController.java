@@ -22,32 +22,10 @@ public class MainController implements View.OnClickListener
     @Override
     public void onClick(View view)
     {
-        Intent intent = new Intent(mainActivity, StarshipActivity.class);
-        Fleet fleet = new Fleet();
-
-        try {
-            fleet.loadFleetCSV(mainActivity, "fleet.csv");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        int id = view.getId();
-        switch(id){
-            case R.id.starship1:
-                Starship starship1 = fleet.searchFleetByRegistry("NCC-74656");
-                intent.putExtra("Starship", starship1);
-                break;
-            case R.id.starship2:
-                Starship starship2 = fleet.searchFleetByRegistry("NCC-71854");
-                intent.putExtra("Starship", starship2);
-                break;
-            case R.id.starship3:
-                Starship starship3 = fleet.searchFleetByRegistry("NCC-75689");
-                intent.putExtra("Starship", starship3);
-                break;
-            default:
-                break;
-
-        }
-        mainActivity.startActivity(intent);
+        Intent intent = new Intent(view.getContext(), StarshipActivity.class);
+        intent.putExtra("name", view.getId());
+        view.getContext().startActivity(intent);
     }
+
 }
+

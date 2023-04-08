@@ -20,13 +20,23 @@ public class StarshipController implements View.OnClickListener
 
     @Override
     public void onClick(View view) {
-
+        Fleet fleet = new Fleet();
         Starship starship = new Starship();
+        try {
+            fleet.loadFleetCSV(starshipActivity, "fleet.csv");
+        } catch (IOException e) {
+            System.err.println("ERROR: Unable to load fleet.csv");
+            e.printStackTrace();
+        }
+
         try {
             starship.loadPersonnelCSV(starshipActivity, "personnel.csv");
         } catch (IOException e) {
+            System.err.println("ERROR: Unable to load personnel.csv");
             e.printStackTrace();
         }
+
+
 
 
     }

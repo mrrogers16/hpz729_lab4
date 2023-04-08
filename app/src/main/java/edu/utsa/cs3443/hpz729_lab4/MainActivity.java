@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button1 = findViewById(R.id.starship1);
-        Button button2 = findViewById(R.id.starship2);
-        Button button3 = findViewById(R.id.starship3);
+        Button button1 = findViewById(R.id.Voyager);
+        Button button2 = findViewById(R.id.Venture);
+        Button button3 = findViewById(R.id.Gibraltar);
 
         button1.setOnClickListener(new MainController(this));
         button2.setOnClickListener(new MainController(this));
