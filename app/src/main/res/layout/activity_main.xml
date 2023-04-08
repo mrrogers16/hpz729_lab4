@@ -10,10 +10,12 @@
         android:id="@+id/imageView"
         android:layout_width="321dp"
         android:layout_height="305dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/main_logo"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="16dp"
-        android:background="@color/black"/>
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/Voyager"
@@ -21,8 +23,10 @@
         android:layout_height="60dp"
         android:layout_marginTop="335dp"
         android:text="USS Voyager\nNCC-74656"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="118dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Venture"
@@ -30,8 +34,10 @@
         android:layout_height="60dp"
         android:layout_marginTop="395dp"
         android:text="USS Venture\nNCC-71854"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="118dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Gibraltar"
@@ -39,7 +45,9 @@
         android:layout_height="60dp"
         android:layout_marginTop="455dp"
         android:text="USS Gibraltar\nNCC-75689"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="118dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
