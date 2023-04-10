@@ -24,6 +24,7 @@ public class MainController implements View.OnClickListener
     {
 
 
+
         Intent intent = new Intent(view.getContext(), StarshipActivity.class);
         intent.putExtra("name", view.getId());
         view.getContext().startActivity(intent);

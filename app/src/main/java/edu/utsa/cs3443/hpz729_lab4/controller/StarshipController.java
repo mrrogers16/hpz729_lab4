@@ -18,6 +18,9 @@ public class StarshipController implements View.OnClickListener
         this.starshipActivity = starshipActivity;
     }
 
+    int[] imageid = {"};
+
+
     @Override
     public void onClick(View view) {
         Fleet fleet = new Fleet();
@@ -35,6 +38,15 @@ public class StarshipController implements View.OnClickListener
             System.err.println("ERROR: Unable to load personnel.csv");
             e.printStackTrace();
         }
+
+        Imageview iv1 = findViewbyid ("imageview1");
+        make array of int rviewi do this ONCE
+            read everything into an array of IMAGEVIEWS findviewbyid
+
+                setImageView
+
+
+
 
 
 

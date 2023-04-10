@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import edu.utsa.cs3443.hpz729_lab4.controller.StarshipController;
+import edu.utsa.cs3443.hpz729_lab4.model.Fleet;
 
 public class StarshipActivity extends AppCompatActivity {
     private StarshipController starshipController;
@@ -13,8 +14,13 @@ public class StarshipActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starship);
+        Fleet fleet = new Fleet();
+        StarshipController starshipController = new StarshipController(this);
 
-        StarshipController starshipController = new StarshipController()
+        if(fleet == null)
+        {
+            fleet.loadFleetCSV(this, );
+        }
 
 
     }
