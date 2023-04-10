@@ -20,17 +20,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button1 = findViewById(R.id.textView1);
-        Button button2 = findViewById(R.id.textView2);
-        Button button3 = findViewById(R.id.textView3);
+        Button button1 = findViewById(R.id.Voyager);
+        Button button2 = findViewById(R.id.Venture);
+        Button button3 = findViewById(R.id.Gibraltar);
 
         button1.setOnClickListener(new MainController(this));
         button2.setOnClickListener(new MainController(this));
         button3.setOnClickListener(new MainController(this));
     }
-}       //Use array for ImageViews and TextViews so that I can loop through later
+}
 
-//    Load the data from the fleet.csv and personnel.csv files and create instances of the Starship, CrewMember, and Fleet classes in the MainActivity class.
+//    Load the data from the fleet.csv and personnel.csv files and create instances of the Starship, CrewMember, and Fleet classes in your MainActivity class.
 //        Create the MainActivity and activity_main.xml files.
 //        Create the MainController class in the edu.utsa.cs3443.abc123_lab4.controller package.
 //        Implement the View.OnClickListener interface in the MainController class and handle button clicks.

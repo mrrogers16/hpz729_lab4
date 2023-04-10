@@ -14,6 +14,8 @@ public class StarshipActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starship);
 
+        StarshipController starshipController = new StarshipController()
+
 
     }
 

@@ -42,7 +42,47 @@ public class Fleet {
         this.setFleetName(name);
     }
 
+    /**
+     *
+     * @param starShipList
+     * @param name
+     * @return
+     */
+    public Starship search_ShipName(ArrayList<Starship> starShipList, String name)
+    {
+        for(Starship i : starShipList)
+        {
+            if(i.getShipName().equals(name))
+            {
+                return i;
+            }
+        }
+        return null;
+    }
+    /**
+     *
+     * @param starShipList
+     * @param registry
+     * @return
+     */
+    public Starship search_ShipID(ArrayList<Starship> starShipList, String registry)
+    {
+        for(Starship i : starShipList)
+        {
+            if(i.getRegistry().equals(registry))
+            {
+                return i;
+            }
+        }
+        return null;
+    }
 
+    /**
+     *
+     * @param context
+     * @param filepath
+     * @throws IOException
+     */
     public void loadFleetCSV(Context context, String filepath) throws IOException
     {
         AssetManager assetManager = context.getAssets();
@@ -64,18 +104,6 @@ public class Fleet {
         }
     }
 
-    public Starship searchFleetByRegistry(String registry)
-    {
-        for(Starship i : starShipList)
-        {
-            String reg = i.getRegistry();
-            if(reg.equals(registry))
-            {
-                return i;
-            }
-        }
-        return null;
-    }
 
 
     /**
