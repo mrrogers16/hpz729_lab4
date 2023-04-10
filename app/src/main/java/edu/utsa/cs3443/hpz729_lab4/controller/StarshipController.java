@@ -38,6 +38,10 @@ public class StarshipController implements View.OnClickListener
 
 
 
+        //load our crewmembers/person
+
+
+
 
     }
 }
