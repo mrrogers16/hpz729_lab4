@@ -14,6 +14,7 @@ package edu.utsa.cs3443.hpz729_lab4.model;
  */
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -54,12 +55,14 @@ public class Starship {
      */
     public void loadPersonnelCSV(Context context, String filepath) throws IOException
     {
+
         ArrayList<CrewMember> crewList = new ArrayList<>();
 
         AssetManager assetManager = context.getAssets();
         InputStream inputStream = assetManager.open(filepath);
         BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
         String line;
+
         while ((line = br.readLine()) != null) {
             String[] fields = line.split(",");
             if (fields.length == 5) {
@@ -71,9 +74,14 @@ public class Starship {
 
                 CrewMember crewMember = new CrewMember(name, position, rank, registry, species);
                 crewList.add(crewMember);
+                for(int i = 0; i < crewList.size();i++)
+                {
+                    Log.d("crewList", crewList.get(i).toString());
+                }
 
             }
         }
+
     }
 
 

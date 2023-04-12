@@ -17,6 +17,7 @@ package edu.utsa.cs3443.hpz729_lab4.model;
  */
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -100,6 +101,10 @@ public class Fleet {
                 String shipClass = fields[2];
                 Starship ship = new Starship(shipName, shipRegistry, shipClass);
                 starShipList.add(ship);
+                for(int i = 0; i < starShipList.size();i++)
+                {
+                    Log.d("Starship List: ", starShipList.get(i).toString());
+                }
             }
         }
     }

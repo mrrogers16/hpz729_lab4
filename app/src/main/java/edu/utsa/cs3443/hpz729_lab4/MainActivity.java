@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button1 = findViewById(R.id.Voyager);
-        Button button2 = findViewById(R.id.Venture);
-        Button button3 = findViewById(R.id.Gibraltar);
+        Button voyager = findViewById(R.id.Voyager);
+        Button venture = findViewById(R.id.Venture);
+        Button gibraltar = findViewById(R.id.Gibraltar);
 
-        button1.setOnClickListener(new MainController(this));
-        button2.setOnClickListener(new MainController(this));
-        button3.setOnClickListener(new MainController(this));
+        voyager.setOnClickListener(new MainController("USS Voyager NCC-74656"));
+        venture.setOnClickListener(new MainController("USS Venture NCC-71854"));
+        gibraltar.setOnClickListener(new MainController("USS Gibraltar NCC-75689"));
     }
 }
 

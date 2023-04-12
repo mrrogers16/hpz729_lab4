@@ -13,10 +13,10 @@ import edu.utsa.cs3443.hpz729_lab4.model.CrewMember;
 
 public class MainController implements View.OnClickListener
 {
-    private MainActivity mainActivity;
-    public MainController(MainActivity mainActivity)
+    private String shipName;
+    public MainController(String shipName)
     {
-        this.mainActivity = mainActivity;
+        this.shipName = shipName;
     }
 
     @Override
@@ -26,7 +26,7 @@ public class MainController implements View.OnClickListener
 
 
         Intent intent = new Intent(view.getContext(), StarshipActivity.class);
-        intent.putExtra("name", view.getId());
+        intent.putExtra("shipName", shipName);
         view.getContext().startActivity(intent);
     }
 
